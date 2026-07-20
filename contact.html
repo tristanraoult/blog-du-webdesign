@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prendre Rendez-vous / Contact | Blog Du Webdesign</title>
+  <meta name="description" content="Planifiez votre rendez-vous de cadrage avec l'agence Blog Du Webdesign. Remplissez notre formulaire de prise de contact pour discuter de votre projet digital.">
+  
+  <!-- Favicon & Stylesheet -->
+  <link rel="icon" href="https://www.blogduwebdesign.com/medias/site/favicon/fav-bdwd-33.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="app-wrapper">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar-nav">
+      <div class="sidebar-logo">
+        <a href="index.html">
+          <img src="https://www.blogduwebdesign.com/medias/site/logos/logo-bdwd.png" alt="Blog Du Webdesign">
+        </a>
+        <span>BLOG DU WEBDESIGN</span>
+      </div>
+      
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item"><a href="index.html">Accueil</a></li>
+        <li class="sidebar-menu-item"><a href="projets.html">Projets</a></li>
+        <li class="sidebar-menu-item"><a href="services.html">Services</a></li>
+        <li class="sidebar-menu-item"><a href="agence.html">L'Agence</a></li>
+        <li class="sidebar-menu-item active"><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <div class="sidebar-cta">
+        <div class="magnetic-wrap">
+          <a href="contact.html" class="btn-sidebar">Prendre RDV</a>
+        </div>
+      </div>
+      
+      <div class="sidebar-footer">
+        <div class="sidebar-socials">
+          <a href="https://www.linkedin.com/company/blogduwebdesign/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/BlogDuWebdesign" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/BlogDuWebdesign/?locale=fr_FR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/blogduwebdesign/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="scroll-progress-container">
+          <div class="scroll-progress-bar"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <div class="mobile-logo">
+        <img src="https://www.blogduwebdesign.com/medias/site/logos/logo-bdwd.png" alt="Blog Du Webdesign Logo">
+        <span>Blog Du Webdesign</span>
+      </div>
+      <button class="menu-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <!-- Fullscreen Menu Overlay for Mobile -->
+    <div class="mobile-nav-overlay">
+      <ul class="mobile-nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="agence.html">L'Agence</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="magnetic-wrap">
+        <a href="contact.html" class="btn-primary">Prendre RDV</a>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <section class="reveal">
+        <span class="section-tag">Rendez-vous</span>
+        <h1 class="section-title">Discutons de votre projet</h1>
+        <p style="max-width: 600px; margin-bottom: 50px; font-size: 1.1rem;">
+          Remplissez le formulaire ci-dessous pour planifier une séance de travail à Bordeaux ou en visioconférence. Notre équipe étudiera votre brief sous 24h.
+        </p>
+
+        <!-- Appointment Booking Form Container -->
+        <div class="rdv-form-container">
+          <form id="rdvForm" novalidate>
+            <div class="form-grid">
+              
+              <!-- Nom complet -->
+              <div class="form-group">
+                <label for="fullname">Nom & Prénom *</label>
+                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="ex: Tristan Raoult" required>
+              </div>
+
+              <!-- Email professionnel -->
+              <div class="form-group">
+                <label for="email">Email professionnel *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="ex: contact@tristanraoult.com" required>
+              </div>
+
+              <!-- Téléphone -->
+              <div class="form-group">
+                <label for="phone">Téléphone *</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="ex: +33 6 00 00 00 00" required>
+              </div>
+
+              <!-- Nom de l'entreprise -->
+              <div class="form-group">
+                <label for="company">Nom de l'entreprise *</label>
+                <input type="text" id="company" name="company" class="form-input" placeholder="ex: Blog Du Webdesign" required>
+              </div>
+
+              <!-- Type de projet (select) -->
+              <div class="form-group">
+                <label for="project_type">Type de projet *</label>
+                <select id="project_type" name="project_type" class="form-select" required>
+                  <option value="" disabled selected>Choisir une option</option>
+                  <option value="identity">Identité visuelle</option>
+                  <option value="website">Site web</option>
+                  <option value="motion">Motion Design</option>
+                  <option value="print">Print</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+              <!-- Budget (select) -->
+              <div class="form-group">
+                <label for="budget">Budget estimé *</label>
+                <select id="budget" name="budget" class="form-select" required>
+                  <option value="" disabled selected>Choisir une tranche</option>
+                  <option value="under_1k">Moins de 1 000 €</option>
+                  <option value="1k_5k">1 000 € - 5 000 €</option>
+                  <option value="5k_15k">5 000 € - 15 000 €</option>
+                  <option value="above_15k">Plus de 15 000 €</option>
+                </select>
+              </div>
+
+              <!-- Date souhaitée -->
+              <div class="form-group">
+                <label for="date_pref">Date souhaitée *</label>
+                <input type="date" id="date_pref" name="date_pref" class="form-input" required>
+              </div>
+
+              <!-- Disponibilités (checkboxes) -->
+              <div class="form-group">
+                <label>Créneaux préférés *</label>
+                <div class="form-checkbox-group">
+                  <input type="checkbox" id="disp_matin" name="dispo" value="matin" class="form-checkbox-input" checked>
+                  <label for="disp_matin" class="form-checkbox-label">Matin</label>
+
+                  <input type="checkbox" id="disp_aprem" name="dispo" value="aprem" class="form-checkbox-input">
+                  <label for="disp_aprem" class="form-checkbox-label">Après-midi</label>
+
+                  <input type="checkbox" id="disp_soir" name="dispo" value="soir" class="form-checkbox-input">
+                  <label for="disp_soir" class="form-checkbox-label">Soirée</label>
+                </div>
+              </div>
+
+              <!-- Description du projet (textarea) -->
+              <div class="form-group full-width">
+                <label for="description">Description du projet *</label>
+                <textarea id="description" name="description" class="form-textarea" placeholder="Expliquez-nous brièvement vos objectifs, vos cibles et les fonctionnalités souhaitées..." required></textarea>
+              </div>
+
+            </div>
+
+            <!-- Submit -->
+            <div style="text-align: center;">
+              <div class="magnetic-wrap">
+                <button type="submit" class="btn-primary">Confirmer ma demande de RDV</button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Success Pane -->
+          <div class="form-success-pane">
+            <div class="form-success-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <h3>Demande Envoyée !</h3>
+            <p style="max-width: 500px; margin: 0 auto 20px;">
+              Merci pour votre démarche. Votre demande de rendez-vous de cadrage a bien été transmise à notre équipe.
+            </p>
+            <p style="font-size: 0.9rem; color: var(--color-accent);">
+              Un e-mail de confirmation vous a été envoyé. Nous vous recontacterons sous 24 heures pour convenir du créneau exact.
+            </p>
+            <div style="margin-top: 30px;">
+              <a href="index.html" class="btn-secondary">Retour à l'accueil</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img src="https://www.blogduwebdesign.com/medias/site/logos/logo-bdwd.png" alt="Blog Du Webdesign">
+              <span>BLOG DU WEBDESIGN</span>
+            </div>
+            <p>Agence créative centrée sur l'excellence UI/UX, le développement robuste et la performance SEO à destination des professionnels exigeants.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Plan du site</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="projets.html">Projets Clients</a></li>
+              <li><a href="services.html">Nos Services</a></li>
+              <li><a href="agence.html">L'Agence</a></li>
+              <li><a href="contact.html">Prise de RDV</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Projets phares</h4>
+            <ul class="footer-links">
+              <li><a href="projet-e-monsite.html">e-monsite</a></li>
+              <li><a href="projet-wuro.html">Wuro</a></li>
+              <li><a href="projet-madate.html">madate</a></li>
+              <li><a href="projet-e-confiance.html">e-confiance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Nous trouver</h4>
+            <p style="color: var(--color-text); margin-bottom: 5px;"><i class="fas fa-map-marker-alt" style="color: var(--color-accent); margin-right: 8px;"></i> 12 Rue de la Rousselle, 33000 Bordeaux</p>
+            <p style="color: var(--color-text); margin-bottom: 5px;"><i class="fas fa-envelope" style="color: var(--color-accent); margin-right: 8px;"></i> contact@blogduwebdesign.com</p>
+            <p style="color: var(--color-text);"><i class="fas fa-phone" style="color: var(--color-accent); margin-right: 8px;"></i> +33 5 56 00 00 00</p>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="footer-copyright">&copy; 2026 Blog Du Webdesign. Tous droits réservés.</p>
+          <p class="footer-credit">Site redesigné avec attention ♥ par Tristan</p>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
